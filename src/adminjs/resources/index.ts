@@ -5,6 +5,8 @@ import { Course } from "./../../models/Course";
 import { courseResourceFeatures, courseResourceOptions } from "./course";
 import { Episode } from "./../../models/Episode";
 import { episodeResourceFeatures, episodeResourceOptions } from "./episode";
+import { User } from "./../../models/User";
+import { userResourceOptions } from "./user";
 
 export const adminJsResources: ResourceWithOptions[] = [
   {
@@ -20,5 +22,9 @@ export const adminJsResources: ResourceWithOptions[] = [
     resource: Episode,
     options: episodeResourceOptions,
     features: episodeResourceFeatures,
+  },
+  {
+    resource: User,
+    options: userResourceOptions,
   },
 ];
